@@ -1,0 +1,61 @@
+<!doctype html>
+<html ng-app="Todo-app">
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="app.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="app.js"></script>
+
+  <!-- include firebase backend ?????-->
+</head>
+<div class="container">
+  <h4 class="list-group-item title">Angular Todos</h4>
+  <body ng-controller="TodoCtrl">
+  <!-- list of todos -->
+    <div ng-repeat = "todo in todos" class="list-group-item">
+        <!-- checkbox -->
+        <input type = "checkbox" ng-model="todo.done" class="done-{{todo.done}}"/>
+
+        <!-- text -->
+        <span ng-model="todo.text" class="completed-{{todo.done}}">{{todo.text}}</span>
+
+        <!-- priority -->
+        <span ng-model="todo.priority" class="priority {{todo.priority}}">{{todo.priority}}</span>
+
+        <!-- move up -->
+        <a href="" ng-click="move($index, 'up')"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+
+        <!-- move down -->
+        <a href="" ng-click="move($index, 'down')"><span class="glyphicon glyphicon-circle-arrow-down"></span></a>
+
+        <!-- remove -->
+        <a href="" ng-click="removeTodo($index)"><span class="glyphicon glyphicon-remove"></span></a>
+
+    </div>
+<!-- preview as your type -->
+    <div class='list-group-item' ng-show ='todoText'>
+      <input type='checkbox' disabled="true">
+      <input type='text' disabled="true" class="todobox" placeholder='{{todoText}}'>
+      <input type='text' disabled="true" class="todobox" placeholder='{{todoPriority}}'>
+    </div>
+
+
+
+
+<!-- add todo form -->
+    <form ng-submit="addTodo()" class="list-group-item">
+      <input type="text" placehodler="Add your task here" ng-model="todoText"/>
+
+      <!-- priority selector -->
+      <select ng-model="todoPriority">
+          <option value='normal'>Normal</option>
+          <option value='medium'>Medium</option>
+          <option value='high'>High</option>
+      </select>
+      <input type="submit"/>
+     </form>
+</div>
+</body>
+</html>
