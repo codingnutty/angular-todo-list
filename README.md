@@ -14,7 +14,7 @@ My project is a basic todo-list created using Angular.js without using a backend
 It works using magic that angularJS brings to HTML. Angular is a front-end javascript framework that helps you build a well-structured rich client-side applications in a modular fashion with less code and more flexibility. It extends HTML by providing directives that add functionality to your markup and allows you to create dynamic templates. It implements 2-way-binding, that connects the HTML(view) to javascript(models). This means that any update on your model will immediately reflect in your view without the need for any DOM manipulation or event handling. Angular also has a concept of directives that adds behaviour to your html code.
 </p>
 <p>
-For Angular to work you only need to attach the angularjs link <a href="" https://code.angularjs.org/1.4.5/angular.min.js"/> inside of a script tag on the HTML page for it to be viewed locally without a server (just by opening the .html page).
+For Angular to work you only need to attach the angularjs link <a href="" https://code.angularjs.org/1.4.5/angular.min.js"/></a> inside of a script tag on the HTML page for it to be viewed locally without a server (just by opening the .html page).
 </p>
 <p>
 In order to connect it to a backend and set up a server one can use npm (node package manager). npm uses package.json and bower.json to run install. NPM and Bower are both dependency management tools. npm is used for intalling Node js modules and Bower is used for managing front end components like html, css, js etc.
