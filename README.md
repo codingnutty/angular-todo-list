@@ -17,7 +17,7 @@ It works using magic that angularJS brings to HTML. Angular is a front-end javas
 For Angular to work you only need to attach the angularjs link https://code.angularjs.org/1.4.5/angular.min.js inside of a script tag on the HTML page for it to be viewed locally without a server (just by opening the .html page).
 </p>
 <p>
-In order to connect it to a backend and set up a server one can use npm (node package manager). npm uses package.json and bower.json to run install. and one can run the server using npm start and open <a href ="https://localhost:8000/app/"/>  NPM and Bower are both dependency management tools. npm is used for intalling Node js modules and Bower is used for managing front end components like html, css, js etc.
+In order to connect it to a backend and set up a server one can use npm (node package manager). npm uses package.json and bower.json to run install. and one can run the server using npm start and open <a href ="https://localhost:8000/app/"/>localhost</a> on your browser. NPM and Bower are both dependency management tools. npm is used for intalling Node js modules and Bower is used for managing front end components like html, css, js etc.
 </p>
 
 ###How to clone my repo and get it running.
