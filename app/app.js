@@ -19,8 +19,12 @@
             $scope.todos.push(newTodo);
             $scope.todoText = '';
             $scope.todoPriority = 'normal';
-
         };
+
+      // Get total todos
+       $scope.getTotal = function(){
+         return $scope.todos.length;
+       };
 
 
       // function to delete item
